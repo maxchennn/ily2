@@ -1,0 +1,25 @@
+[project]
+name = "ily2"
+version = "0.1.0"
+description = "ILY2 - A guided, archinstall-inspired installer for Gentoo Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "questionary>=2.0.0",
+    "rich>=13.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/maxchennn/ily2"
+Repository = "https://github.com/maxchennn/ily2"
+
+[project.scripts]
+ily2 = "ily2.__main__:run"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ily2*"]

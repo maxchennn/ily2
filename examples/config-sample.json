@@ -1,0 +1,9 @@
+{
+  "disk": "/dev/sda",
+  "uefi": true,
+  "root_fs": "ext4",
+  "swap_size": "4GiB",
+  "variant": "openrc",
+  "hostname": "gentoo",
+  "kernel_method": "genkernel"
+}
